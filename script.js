@@ -29,14 +29,14 @@ function checkNumberType(num) {
 - Верните итоговую цену с учетом скидки, округленную до 2 знаков после запятой. */
 
 function getDiscountedPrice(price, isMember) {
-  if(isMember === true){
+  if (isMember === true) {
     return 'ваша скидка 15%'
-  }else if(isMember===false){
+  } else if (isMember === false) {
     return 'ваша скидка 5%'
-  }else{
+  } else {
     return price.toFixed(2)
   }
-  
+
 }
 
 
@@ -50,15 +50,15 @@ function getDiscountedPrice(price, isMember) {
 // - Если передана некорректная операция, выбросите`"Invalid operation"`.
 
 function calculate(a, b, operation) {
-  switch (key) {
-    case value:
-      
+  switch (operation) {
+    case :
+
       break;
-  
+
     default:
-      break;
+      "Invalid operation"
   }
-  
+
 }
 
 
@@ -99,8 +99,15 @@ const books = [
 // Используя for...in, создайте новый объект, содержащий только числовые значения.
 
 
+
+
 // 9.  Методы строк 
 // Напишите функцию`capitalizeWords(sentence)`, которая принимает строку и  делает заглавной первую букву каждого слова.  
+
+function capitalizeWords(sentence) {
+  sentence[0].toUpperCase() + sentence.slice(1)
+
+}
 // capitalizeWords("hello world"); // "Hello World"
 
 
