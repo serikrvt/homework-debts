@@ -51,14 +51,14 @@ function getDiscountedPrice(price, isMember) {
 
 function calculate(a, b, operation) {
   switch (operation) {
-    case 'add' :
-      a+b
+    case 'add':
+      a + b
     case 'subtract':
-      a-b
+      a - b
     case 'multiply':
-      a*b
+      a * b
     case 'divide':
-      a%b===0
+      a % b === 0
     default:
       "Invalid operation"
   }
@@ -86,6 +86,15 @@ function calculate(a, b, operation) {
 
 // 6.  Метод, изменяющий значение свойства
 // Создайте объект lamp с полем isOn (по умолчанию false) и методом toggle(), который меняет его на противоположное.
+const lamp = {
+  isOn: false,
+  toggle() {
+    if (isOn === false) {
+      return isOn = true
+    }
+  }
+
+}
 
 // 7.  Методы массивов 
 // Дан массив объектов:
@@ -99,7 +108,12 @@ const books = [
 
 // Напишите функцию`filterBooks(books, minRating, maxPrice)`, которая:
 // - Возвращает книги с рейтингом  не ниже  `minRating` и ценой  не выше`maxPrice` и возвращает массив только с  названиями книг.  
+function filterBooks(books, minRating, maxPrice) {
+  if( books > Math.min(minRating) &&  ){
 
+  }
+  return 
+}
 
 // 8.  Дана объект:
 // const data = { a: 10, b: "hello", c: 42, d: true };
