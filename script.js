@@ -108,16 +108,15 @@ const books = [
 
 // Напишите функцию`filterBooks(books, minRating, maxPrice)`, которая:
 // - Возвращает книги с рейтингом  не ниже  `minRating` и ценой  не выше`maxPrice` и возвращает массив только с  названиями книг.  
-function filterBooks(books, minRating, maxPrice) {
-  if( books > Math.min(minRating) &&  ){
 
-  }
-  return 
-}
+
 
 // 8.  Дана объект:
 // const data = { a: 10, b: "hello", c: 42, d: true };
 // Используя for...in, создайте новый объект, содержащий только числовые значения.
+
+data.map(item=>item.match(/ \d/g).join(''))
+// googl
 
 
 
