@@ -51,10 +51,14 @@ function getDiscountedPrice(price, isMember) {
 
 function calculate(a, b, operation) {
   switch (operation) {
-    case :
-
-      break;
-
+    case 'add' :
+      a+b
+    case 'subtract':
+      a-b
+    case 'multiply':
+      a*b
+    case 'divide':
+      a%b===0
     default:
       "Invalid operation"
   }
@@ -69,6 +73,9 @@ function calculate(a, b, operation) {
 - Пользователь  старше 18   или  он администратор.  
 - Если возраст  меньше 12, доступ всегда  запрещен, даже если`isAdmin === true`.  
 - Функция возвращает `true` или`false`. */
+
+
+
 
 //   5.  Параметры по умолчанию 
 //   Создайте функцию`createUser(name = "Guest", age = 18, role = "user")`, которая возвращает объект пользователя.  
