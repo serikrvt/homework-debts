@@ -74,6 +74,16 @@ function calculate(a, b, operation) {
 - Если возраст  меньше 12, доступ всегда  запрещен, даже если`isAdmin === true`.  
 - Функция возвращает `true` или`false`. */
 
+function canAccess(age, isAdmin){
+if (age > 18 || isAdmin===true){
+  return 'Доступ разрешен'
+}else if(age <12 || isAdmin===true){
+  return 'доступ всегда  запрещен'
+}else {
+  return !true
+}
+}
+
 
 
 
@@ -115,7 +125,7 @@ const books = [
 // const data = { a: 10, b: "hello", c: 42, d: true };
 // Используя for...in, создайте новый объект, содержащий только числовые значения.
 
-data.map(item=>item.match(/ \d/g).join(''))
+data.map(item => item.match(/ \d/g).join(''))
 // googl
 
 
